@@ -20,14 +20,39 @@ console.log((2 + 2) * 2); //nawias zmienia kolejność wykonywania działań
 
 console.log("x = " + x );
 
-x = x + 5;
+    x = x + 5;
 
 console.log(x)
 
-x += 5; // to jest to samo co wyzej tylko skrócony zapis 
+    x += 5; // to jest to samo co wyzej tylko skrócony zapis 
 
 console.log(x)
 
+    var x = 1;
 
+console.log("x = " + x );
+
+    x++;                        //inkrementacja 
+
+console.log("x = " + x ); 
+
+    x--;                        //dekrementacja 
+
+console.log("x = " + x ); 
+
+    var y = x++ + 10;           //postdekrementacja 
+
+console.log("y = " + y ); 
+console.log("x = " + x ); 
+
+    y = --x;                // predekrementacja 
+
+console.log("y = " + y ); 
+console.log("x = " + x ); 
+
+    y = ++x ;                // predekrementacja  
+
+console.log("y = " + y ); 
+console.log("x = " + x ); 
 
 
