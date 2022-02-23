@@ -35,4 +35,6 @@ console.log(true && false);     // and wymaga 2x true
 
 console.log(!5 > 0);            // not operator negacji zaprzeczenia
 
-console.log(true || true && false);
+console.log(true || true && false); 
+
+console.log((true || true) && !false); 
