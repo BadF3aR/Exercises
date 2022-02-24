@@ -1,1 +1,1 @@
-alert("uwaga");
+/* alert("uwaga"); */
