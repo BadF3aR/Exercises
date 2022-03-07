@@ -2,12 +2,13 @@
 
 var box = document.getElementById("result");
 var box1 = document.getElementById("result1");
+var box2 = document.getElementById("result2")
 
 //While
 
-var i = 10;
+var i = 0;
 
-while(i < 10)
+while(i <= 5)
 {
     box.innerHTML += i + "<br>";
     i++;
@@ -15,10 +16,13 @@ while(i < 10)
 
 // Do while zawsze wykona sie przynajmniej raz 
 
-var j = 10;
+var j = 0;
 
 do
 {
     box1.innerHTML += j + "<br>";
     j++;
-} while( j < 10);
+} while( j <= 4);
+
+// For
+
