@@ -25,4 +25,8 @@ do
 } while( j <= 4);
 
 // For
+ for(var k = 0; k  <= 5; k++ )
+ {
+     box2.innerHTML += k + "<br>";
+ }
 
