@@ -12,7 +12,7 @@ for (j = 0; j < 3; j++)
     loop2:
     for (var i = 0; i <= 10; i++) //petla w petli "label"
     {
-        box.innerHTML += " - <br>"
+        //box.innerHTML += " - <br>"
         if(i > 5)
         {
             continue loop1;         //przenosi do koknretnego obiegu/petli
@@ -25,12 +25,25 @@ for (j = 0; j < 3; j++)
     }
 }
 // Break
-
-for (var i = 0; i <= 10;  i++)
+top:
+for (var j = 0; j < 3; j++)
 {
-    if( i == 5)
+    inner:
+    for (var i = 0; i <= 10;  i++)
     {
-        break;
+        if( i == 5)
+        {
+            break top;          //konczy pętle zewnetrzna 
+        }
+        box1.innerHTML += j + " - " + i + "<br>";
     }
-    box1.innerHTML += i + "<br>";
+}
+
+//------------
+
+skip:
+{
+    alert("Warning!")
+    break skip;
+    alert("Skip!")
 }
