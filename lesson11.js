@@ -40,3 +40,13 @@ newLi3.appendChild(text3);
 newLi3.classList.add("good");
 
 list.replaceChild(newLi3, firstLi);
+
+//--------------------------------------------------- usuwanie 
+
+list.appendChild(list.lastElementChild.cloneNode(true)); //klonowanie
+//1 sposob
+list.removeChild(list.lastElementChild);
+//2 sposob 
+var last = list.lastElementChild;
+
+last.parentNode.removeChild(last);
