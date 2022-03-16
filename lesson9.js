@@ -28,3 +28,14 @@ date.innerHTML += "Date1: " + date1 + '<br>';
 
 var date2 = new Date(1999, 3, 6, 1, 2, 3,);
 date.innerHTML += "Date 2: " + date2.getDate() + "." +date2.getMonth() + "." + date2.getFullYear() + "<br>";
+
+// watch
+
+
+setInterval(setTime, 1000);
+
+function setTime()
+{
+    var time = new Date();
+    date.innerHTML = "Czas: " + time.getHours() + ":" + time.getMinutes() + ":" + time.getSeconds();
+}
